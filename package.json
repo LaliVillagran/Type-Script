@@ -1,21 +1,33 @@
 {
   "name": "rxjs-dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "* Lo primero que debemos de hacer después de descargar el código es ejecutar el comando:",
+  "main": "./src/index.ts",
   "dependencies": {
-    "typescript": "^3.6.3",
+    "express": "^4.16.4",
     "webpack": "^4.40.2",
     "webpack-dev-server": "^3.8.1"
   },
   "devDependencies": {
-    "ts-loader": "^6.1.2",
+    "@types/express": "^4.16.1",
     "css-loader": "^3.2.0",
+    "ts-loader": "^6.1.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
     "webpack-cli": "^3.3.9"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --port=8081"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaliVillagran/Type-Script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LaliVillagran/Type-Script/issues"
+  },
+  "homepage": "https://github.com/LaliVillagran/Type-Script#readme",
+  "keywords": []
 }

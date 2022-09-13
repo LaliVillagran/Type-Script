@@ -1,4 +1,5 @@
 
+/*
 interface utlAlumno{
     nombre:string;
     edad:number;
@@ -18,3 +19,4 @@ const pruebaAlumno:utlAlumno={
     }
 
 }
+*/
