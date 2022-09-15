@@ -1,9 +1,13 @@
 
-/*
 interface utlAlumno{
     nombre:string;
     edad:number;
-
+    direccion:{
+    calle:string;
+    pais:string;
+    estado:string;
+    numero:string|number;
+    }
 }
 const pruebaAlumno:utlAlumno={
     nombre:'mario',
@@ -14,9 +18,10 @@ const pruebaAlumno:utlAlumno={
         estado:'Gto',
         numero:477254423,
     },
-    mostrarDireccion(){
-        return +this.nombre+ ', ' +this.direccion.estado+ ', ' +this.direccion.pais;
-    }
+    
 
 }
-*/
+
+function mostrarDireccion(){
+        return pruebaAlumno.nombre+ ', ' +pruebaAlumno.direccion.estado+ ', ' +pruebaAlumno.direccion.pais;
+    }
