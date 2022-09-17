@@ -1,110 +1,46 @@
-export class formulaGeneral{
-    valora:number;
-    valorb:number;
-    valorc:number;
+//Operaciones de mulplicar a x b
+//usuando sumas
+//a = 3 b = 5
+//res: 3 + 3 + 3 + 3 + 3 =15
 
-    result:number;
-    result2:number;
-    result3:number;
-    result4:number;
+class multi{
+    public nom:number;
+    public a1:number;
+    public b1:number;
 
+    contructor(a:number,a2:number,b2:number){
 
-    contructor(numero1:number,numero2:number){
-
-        this.valora=numero1;
-        this.valorb=numero2;
+        this.nom=a;
+        this.a1=a2;
+        this.b1=b2;
+    }
+    setNumer(a:number,a2:number,b2:number){
+        this.nom=a;
+        this.a1=a2;
+        this.b1=b2;
     }
 
-    // setNumero1(a:number){
-    //     this.numero1=a;
-    // }
-
-    // getNumero1():number{
-    //     return this.numero1
-    // }
-
-    // setNumero2(b:number){
-    //     this.numero2=b;
-    // }
-
-    // getNumero2():number{
-    //     return this.numero2
-    // }
-
-    suma(){
-        this.result = this.valora + this.valorb;
-
-        console.log("Formula suma")
-        console.log(`valor "a": ${this.valora}`)
-        console.log(`valor "b": ${this.valorb}`)
-        console.log(`resultado ${this.result}`)
-        return this.result;
+    getNumer():number{
+        return this.nom;
+        return this.a1;
+        return this.b1;
     }
 
-    resta(){
-        this.result2 = this.valora - this.valorb;
+    calcular():void{
+        for(let i=1; i<6; ++i){
+            
+            console.log(`${this.a1} x ${i}= ${i*this.a1}`)
+        }
 
-        console.log("Formula resta")
-        this.result = this.valora + this.valorb;
-        console.log(`valor "a": ${this.valora}`)
-        console.log(`valor "b": ${this.valorb}`)
-        console.log(`resultado ${this.result2}`)
-        return this.result2;
+        // let s:number=1;
+        // while(s<11){
+        //     console.log(`${this.nom} x ${s} = ${s*this.nom}`);
+        //     ++s;
+        // }
     }
-
-    FormGenx1(){
-        this.result3 = - this.valora - Math.sqrt(this.valorb^2 - 4 * this.valora * this.valorc) / 2*this.valora;
-
-        console.log("Formula General x1")
-        console.log(`valor "a": ${this.valora}`)
-        console.log(`valor "b": ${this.valorb}`)
-        console.log(`valor "c": ${this.valorc}`)
-        console.log(`resultado ${this.result3}`)
-        return this.result3;
-    }
-
-    FormGenx2(){
-        this.result4 = - this.valora + Math.sqrt(this.valorb^2 - 4 * this.valora * this.valorc) / 2*this.valora;
-
-        console.log("Formula General x2")
-        console.log(`valor "a": ${this.valora}`)
-        console.log(`valor "b": ${this.valorb}`)
-        console.log(`valor "c": ${this.valorc}`)
-        console.log(`resultado ${this.result4}`)
-        return this.result4;
-    }
-
 }
-let f1:formulaGeneral;
-f1=new formulaGeneral();
 
-let f2:formulaGeneral;
-f2=new formulaGeneral();
-
-let f3:formulaGeneral;
-f3=new formulaGeneral();
-
-let f4:formulaGeneral;
-f4=new formulaGeneral();
-
-
-
-f1.valora=5.7;
-f1.valorb=2;
-
-f2.valora=10;
-f2.valorb=5;
-
-f3.valora=20;
-f3.valorb=15;
-f3.valorc=5;
-
-f4.valora=4;
-f4.valorb=3;
-f4.valorc=5;
-
-
-f1.suma();
-f2.resta();
-f3.FormGenx1();
-f4.FormGenx2();
+let multipli=new multi();
+multipli.a1=3;
+multipli.b1=5;
+console.log(multipli.calcular());
